@@ -160,6 +160,14 @@ body {
     border: none;
   }
 
+  .main-nav ul li:first-child a {
+    border-radius: 0;
+  }
+
+  .main-nav ul li:last-child a {
+    border-radius: 0;
+  }
+
   .showcase h1 {
     font-size: 2.5rem;
   }
