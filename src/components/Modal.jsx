@@ -10,8 +10,6 @@ export function Popup(props) {
 
         let data = '';
         let els = formRef.current.elements;
-debugger;
-        console.log(els);
         for(let k of els) {
             if(k.type === "text") {
                 data += `${k.value} \n`;
