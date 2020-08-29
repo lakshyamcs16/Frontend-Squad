@@ -24,7 +24,6 @@ class Container extends PureComponent {
     }
 
     render() {
-        console.log(this.state);
         return (
             <div className="wrapper">
                 <Navbar data={this.state.data} selected={this.state.selected} handleClick={this.handleNavbarClick}/>

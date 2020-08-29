@@ -10,13 +10,17 @@ export function Popup(props) {
 
         let data = '';
         let els = formRef.current.elements;
-
+debugger;
         console.log(els);
         for(let k of els) {
             if(k.type === "text") {
                 data += `${k.value} \n`;
-            }else if(k.type === "select-one") {
-                data += `${k.innerText} \n`;
+            }else if(k.type === "select-one" && k.children && k.children.length>0) {
+                for(let kk of k.children) {
+                    if(kk.selected) {
+                        data += `${kk.value} \n`;
+                    }
+                }
             }else if(k.type === "checkbox" && k.checked) {
                 data += `${k.id} \n`;
             }
@@ -58,13 +62,14 @@ export function Popup(props) {
                                 <Col>
                                     <Form.Label>Number of leads you generate in a month</Form.Label>
                                     <Form.Control as="select">
-                                        <option>-</option>
+                                        <option value="-">-</option>
                                     </Form.Control>
                                 </Col>
                                 <Col>
                                     <Form.Label>Total leads in your CRM</Form.Label>
                                     <Form.Control as="select">
-                                        <option>-</option>
+                                        <option value="-">-</option>
+                                        <option value="else">else</option>
                                     </Form.Control>
                                 </Col>
 
@@ -75,13 +80,13 @@ export function Popup(props) {
                                 <Col>
                                     <Form.Label>Which CRM do you use?</Form.Label>
                                     <Form.Control as="select">
-                                        <option>-</option>
+                                        <option value="-">-</option>
                                     </Form.Control>
                                 </Col>
                                 <Col>
                                     <Form.Label>No. of Agents</Form.Label>
                                     <Form.Control as="select">
-                                        <option>-</option>
+                                        <option value="-">-</option>
                                     </Form.Control>
                                 </Col>
 

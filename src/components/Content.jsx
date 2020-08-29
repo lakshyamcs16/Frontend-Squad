@@ -31,7 +31,7 @@ class Content extends PureComponent {
         let {data, selectedSlot } = this.props;
 
 
-        return data.map(v => {
+        return data.map((v, id) => {
             let popClasses = ["popular"];
             let trialClasses = ["trail"];
 
@@ -44,7 +44,7 @@ class Content extends PureComponent {
             trialClasses = trialClasses.join(" ");
 
             return (
-                <div className="box">
+                <div className="box" key={id}>
                 <div className={popClasses}>Most Popular!</div>
                 <div className="qualified">{v["Plan name"]}</div>
                 <div className="content">
