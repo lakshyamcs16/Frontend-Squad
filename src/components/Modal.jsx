@@ -110,8 +110,8 @@ export function Popup(props) {
                         </Form.Group>
                     </Form>
                 </Modal.Body>
-                <Modal.Footer>
-                    <Button variant="primary" onClick={e => handleSubmit(e)}>
+                <Modal.Footer className="mdl-footer">
+                    <Button className="modal-btn" onClick={e => handleSubmit(e)}>
                         Submit
                     </Button>
                 </Modal.Footer>

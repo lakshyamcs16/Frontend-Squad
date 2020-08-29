@@ -104,6 +104,15 @@ body {
   padding: 10px;
 }
 
+.modal-btn {
+  background-color: var(--highlightedColor) !important;
+  border: none !important;
+}
+
+.mdl-footer {
+  justify-content: flex-start !important;
+}
+
 .qualified,
 .price,
 .trail {
