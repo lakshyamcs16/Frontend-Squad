@@ -1,4 +1,4 @@
-{
+{ 
     "$100K-$200K": [
           {
         "Plan name": "Qualified 20",
@@ -10,27 +10,27 @@
       },
           {
         "Plan name": "Qualified 40",
-        "Qualified Leads Per Month": 20,
-        "Price per live transfer": "$69",
-        "Total qualified lead price": "$1,380",
-        "Total platform price": "$299",
-        "Final package price": "$1,679"
+        "Qualified Leads Per Month": 40,
+        "Price per live transfer": "$67",
+        "Total qualified lead price": "$2,680",
+        "Total platform price": "$599",
+        "Final package price": "$3,279"
       },
           {
         "Plan name": "Qualified 60",
-        "Qualified Leads Per Month": 20,
-        "Price per live transfer": "$69",
-        "Total qualified lead price": "$1,380",
-        "Total platform price": "$299",
-        "Final package price": "$1,679"
+        "Qualified Leads Per Month": 60,
+        "Price per live transfer": "$65",
+        "Total qualified lead price": "$3,900",
+        "Total platform price": "$699",
+        "Final package price": "$4,599"
       },
           {
         "Plan name": "Qualified 80",
-        "Qualified Leads Per Month": 20,
-        "Price per live transfer": "$69",
-        "Total qualified lead price": "$1,380",
-        "Total platform price": "$299",
-        "Final package price": "$1,679"
+        "Qualified Leads Per Month": 80,
+        "Price per live transfer": "$63",
+        "Total qualified lead price": "$5,040",
+        "Total platform price": "$799",
+        "Final package price": "$5,839"
       }
      ],
     "$200K-$300K": [

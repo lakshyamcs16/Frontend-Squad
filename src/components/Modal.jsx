@@ -11,7 +11,7 @@ export function Popup(props) {
         let data = '';
         let els = formRef.current.elements;
         for(let k of els) {
-            if(k.type === "text") {
+            if(k.type === "text" || k.type === "email") {
                 data += `${k.value} \n`;
             }else if(k.type === "select-one" && k.children && k.children.length>0) {
                 for(let kk of k.children) {
